@@ -62,7 +62,7 @@ class App extends React.Component {
 
   handleSubmit(event) {
     event.preventDefault();
-    let uri = "http://jsonplaceholder.typicode.com/posts ";
+    let uri = "https://jsonplaceholder.typicode.com/posts ";
 
     const sendFunction = (data) => {
       fetch(uri, {
