@@ -15,5 +15,5 @@ Technology stack:
 
 ###### Сheck this application at the link below.
 
-<a href="https://ferbiy.github.io/Registration/dist/index.html"  >REGISTRATION APP</a><br>
-<a href="https://ferbiy.github.io/Registration/dist/index.html"  ><img src="https://ferbiy.github.io/Registration/src/img/reg-icon.png" width="130" height="130"></a>
+<a href="https://ferbiy.github.io/Registration/"  >REGISTRATION APP</a><br>
+<a href="https://ferbiy.github.io/Registration/"  ><img src="https://ferbiy.github.io/Registration/src/img/reg-icon.png" width="130" height="130"></a>
