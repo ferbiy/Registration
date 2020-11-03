@@ -1,5 +1,11 @@
 body {
   margin: 0;
+}
+
+.container {
+  margin: auto;
+  width: 25%;
+  min-width: 400px;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
@@ -8,47 +14,20 @@ body {
   font-size: 20px;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
-}
-
-.reg {
-  margin: auto;
-  width: 25%;
-  min-width: 400px;
-}
-
-h2 {
+.h2 {
   font-size: 24px;
   font-weight: 500;
 }
-h3 {
+.h3 {
   font-size: 20px;
   font-weight: 500;
 }
 
-.form-block {
+.field-block {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   margin-bottom: 2rem;
-}
-
-.form-block input {
-  width: 50%;
-}
-
-/* Chrome, Safari, Edge, Opera */
-input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
-}
-
-/* Firefox */
-input[type="number"] {
-  -moz-appearance: textfield;
 }
 
 .bank-block {
@@ -58,31 +37,40 @@ input[type="number"] {
   align-items: flex-end;
   justify-content: space-between;
 }
+
+.bank-block__column {
+  width: 40%;
+}
+
 .bank-block input {
   width: 95%;
 }
 
-.bank-block button {
-  width: 12%;
-  height: 35px;
-  border: 1px solid green;
-  border-radius: 6px;
-  -webkit-box-shadow: inset -2px -2px 2px 0px rgba(0, 0, 0, 0.5);
-  -moz-box-shadow: inset -2px -2px 2px 0px rgba(0, 0, 0, 0.5);
-  box-shadow: inset -2px -2px 2px 0px rgba(0, 0, 0, 0.5);
-  display: block;
-}
-
-input {
+.input {
   border: 1px solid green;
   height: 30px;
-  /* padding-left: 1rem; */
 
   font-size: 1.2rem;
   padding-left: 5%;
 }
 
-select {
+.input--half {
+  width: 50%;
+}
+
+/* Chrome, Safari, Edge, Opera */
+.input::-webkit-outer-spin-button,
+.input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+.input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.select {
   height: 34px;
   border: 1px solid green;
   font-size: 1.2rem;
@@ -94,17 +82,19 @@ select {
   background: url("../img/arrow-down.svg") no-repeat;
   background-position: 95%;
   background-size: contain;
-
+  padding-left: 10px;
   outline: 0;
 }
 
-.bank-block__left,
-.bank-block__right {
-  width: 40%;
+.select__option {
 }
 
-.add-bank,
-.send-button {
+.small-text {
+  font-size: small;
+  color: gray;
+}
+
+.button {
   height: 35px;
   border: 1px solid green;
   border-radius: 6px;
@@ -112,13 +102,13 @@ select {
   -moz-box-shadow: inset -2px -2px 2px 0px rgba(0, 0, 0, 0.5);
   box-shadow: inset -2px -2px 2px 0px rgba(0, 0, 0, 0.5);
   display: block;
-  width: 40%;
   font-size: 1.2rem;
-  margin-bottom: 1rem;
   padding: 0;
 }
 
-.small-text {
-  font-size: small;
-  color: gray;
+.button--big {
+  width: 40%;
+}
+.button--little {
+  width: 12%;
 }
