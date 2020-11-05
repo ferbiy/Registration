@@ -2,7 +2,7 @@ import React from "react";
 
 function Input(props) {
   return (
-    <div className="field-block">
+    <div className="form-field">
       <label htmlFor="login">{props.name}</label>
       <input
         type={props.type}

@@ -4,34 +4,23 @@ export default function BankBlock(props) {
   return (
     <div className="bank-block">
       <div className="bank-block__column">
-        <h3 className="h3">Currency</h3>
+        <h3 className="heading heading--small">Currency</h3>
         <select
           value={props.value.currency}
           onChange={props.changeCurrency}
           data-id={props.dataId}
-          className="select"
+          className="select select--strange-arrow--down"
         >
-          <option
-            value=""
-            disabled
-            style={{ display: "none" }}
-            className="select__option"
-          >
+          <option value="" disabled style={{ display: "none" }}>
             Select
           </option>
-          <option value="USD" className="select__option">
-            USD
-          </option>
-          <option value="EUR" className="select__option">
-            EUR
-          </option>
-          <option value="UAH" className="select__option">
-            UAH
-          </option>
+          <option value="USD">USD</option>
+          <option value="EUR">EUR</option>
+          <option value="UAH">UAH</option>
         </select>
       </div>
       <div className="bank-block__column">
-        <h3 className="h3">Initial deposit</h3>
+        <h3 className="heading heading--small">Initial deposit</h3>
         <input
           type="number"
           min="1"

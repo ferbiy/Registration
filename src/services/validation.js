@@ -1,4 +1,4 @@
-export default function validation(obj) {
+export default function isValid(obj) {
   let result = true;
   valid(obj);
 

@@ -18,7 +18,7 @@ export default class BankAccounts extends React.Component {
   handleChange(newBank) {
     setTimeout(() => {
       this.setState({ bankAccounts: newBank });
-      this.props.handleBank(this.state.bankAccounts);
+      this.props.handleBankUpdate(this.state.bankAccounts);
     }, 1);
   }
 
@@ -66,7 +66,7 @@ export default class BankAccounts extends React.Component {
   render() {
     return (
       <div>
-        <h2 className="h2">Bank accounts</h2>
+        <h2 className="heading heading--large">Bank accounts</h2>
         {this.state.bankAccounts.map((acc, i) => (
           <BankBlock
             key={i}

@@ -14,16 +14,17 @@ body {
   font-size: 20px;
 }
 
-.h2 {
-  font-size: 24px;
+.heading {
   font-weight: 500;
 }
-.h3 {
+.heading--large {
+  font-size: 24px;
+}
+.heading--small {
   font-size: 20px;
-  font-weight: 500;
 }
 
-.field-block {
+.form-field {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -75,6 +76,12 @@ body {
   border: 1px solid green;
   font-size: 1.2rem;
   width: 100%;
+
+  padding-left: 10px;
+  outline: 0;
+}
+
+.select--strange-arrow--down {
   -webkit-appearance: none;
   -moz-appearance: none;
   -ms-appearance: none;
@@ -82,11 +89,6 @@ body {
   background: url("../img/arrow-down.svg") no-repeat;
   background-position: 95%;
   background-size: contain;
-  padding-left: 10px;
-  outline: 0;
-}
-
-.select__option {
 }
 
 .small-text {
